@@ -1,0 +1,22 @@
+using System;
+class Beecrownd{
+    static int X, Y;
+    static void Main(string[] args){
+        while(true){
+            Console.Write("");
+            var data = Console.ReadLine().Split(' ');
+            X = int.Parse(data[0]);
+            Y = int.Parse(data[1]);
+            if(X != Y){
+                if(X < Y){
+                    Console.WriteLine("Crescente");
+                } else{
+                    Console.WriteLine("Decrescente");
+                }
+                continue;
+            } else{
+                break;
+            }
+        }
+    }
+}

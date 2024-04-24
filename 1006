@@ -1,0 +1,12 @@
+using System;
+
+class Beecrownd{
+    static decimal A,B,C;
+    static void Main(string[] args){
+        //inputs
+        Console.Write(""); A = decimal.Parse(Console.ReadLine()); Console.Write(""); B = decimal.Parse(Console.ReadLine()); Console.Write(""); C = decimal.Parse(Console.ReadLine());
+        decimal average = (A * 2 + B * 3 + C * 5) / 10;
+
+        Console.WriteLine($"MEDIA = {Convert.ToDecimal(Math.Round(average, 1))}");
+    }
+}

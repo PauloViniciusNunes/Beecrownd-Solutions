@@ -1,0 +1,21 @@
+using System;
+
+class Answer{
+
+    static int P1_1, P1_2, P2_1, P2_2;
+    static decimal P1_P3, P2_P3;
+
+    private static void Main(string[] args){
+        
+        Console.Write(""); var data_p1 = Console.ReadLine().Split(' ');
+        P1_1 = int.Parse(data_p1[0]); P1_2 = int.Parse(data_p1[1]); P1_P3 = Convert.ToDecimal(data_p1[2]);
+
+        Console.Write(""); var data_p2 = Console.ReadLine().Split(' ');
+        P2_1 = int.Parse(data_p2[0]); P2_2 = int.Parse(data_p2[1]); P2_P3 = Convert.ToDecimal(data_p2[2]);
+        
+        decimal result = (P1_2 * P1_P3) + (P2_2 * P2_P3);
+
+        Console.WriteLine($"VALOR A PAGAR: R$ {Convert.ToDecimal(Math.Round(result, 2))}");
+
+    }
+}

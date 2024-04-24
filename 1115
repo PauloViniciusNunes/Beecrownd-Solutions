@@ -1,0 +1,30 @@
+using System;
+class Beecrownd{
+    static int X, Y;
+    static void Main(string[] args){
+        while(true){
+            Console.Write("");
+            var data = Console.ReadLine().Split(' ');
+            X = int.Parse(data[0]);
+            Y = int.Parse(data[1]);
+            if(!(X == 0 || Y == 0)){
+                if(Y > 0){
+                    if(X > 0){
+                        Console.WriteLine("primeiro");
+                    } else{
+                        Console.WriteLine("segundo");
+                    }
+                } else if(Y < 0){
+                    if(X > 0){
+                        Console.WriteLine("quarto");
+                    } else{
+                        Console.WriteLine("terceiro");
+                    }
+                }
+                continue;  
+            } else{
+                break;
+            }
+        }
+    }
+}
